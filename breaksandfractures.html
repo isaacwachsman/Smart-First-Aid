@@ -1,1 +1,298 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<title> VendAid </title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+.slider {
+        width: 728px;
+        height: 546px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 2184px;
+        background-color: pink;
+        height: 546px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 1s;
+        -moz-transition: left 1s;
+        -o-transition: left 1s;
+        transition: left 1s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -728px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1456px;
+      }
+      .buttons {
+        position: relative;
+        top: -40px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        border-radius: 50px;
+        background-color: #DC0000;
+      }
+
+body
+{
+background-image: linear-gradient(to bottom right, #867979, white);
+background-attachment: fixed;
+}
+
+
+#section
+{
+font-size: 50px;
+color: white;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+background-color: #167376;
+border: 10px solid black;
+border-radius: 30px;
+
+
+}
+
+#title
+{
+font-size: 60px;
+color: #DC0000;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+background-color: white;
+border: 10px solid black;
+border-radius: 30px;
+
+}
+
+        
+
+#subtitle
+{
+font-size: 25px;
+color: #DC0000;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-style: italic;
+background-color: white;
+border: 10px solid black;
+border-radius: 10px;
+}
+
+#modetoggle
+{
+background-color: #DC0000;
+color: white;
+padding: 20px;
+font-size: 20px;
+border: 8px solid black;
+font-family: 'Poppins', sans-serif;
+}
+
+.pageLink
+{
+font-family: 'Poppins', sans-serif;
+margin-left: 30px;
+font-size: 25px;
+background-color: #DC0000;
+color: white;
+padding: 20px;
+border-radius: 25%;
+text-align: center;
+border: 10px solid black;
+text-decoration: none;
+
+}
+
+.pageLink:hover
+{
+    background-color: white;
+    font-size: 40px;
+    color: #DC0000;
+}
+
+
+.supplylist
+{
+    column-count: 3;
+    column-rule-color: white;
+    column-rule-style: dotted;
+    color: white;
+    font-size: 30px;
+    background-color: #DC0000;
+    border: 10px solid black;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image
+{
+    height: 200px;
+    border: 10px solid black;
+}
+
+.instructionaltext
+{
+  
+    color: white;
+    font-size: 30px;
+    background-color: #DC0000;
+    border: 10px solid black;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+
+}
+        
+input.checks
+{
+        transform: scale(1.5);
+}
+
+</style>
+
+</head>
+
+<body id = "body">
+
+
+
+
+
+
+<h1 id = "title"> VendAid | Breaks and Fractures </h1>
+<h2 id = "subtitle"> Easy Access First Aid Supplies and Instructions </h2>
+
+
+<br>
+<br>
+<br>
+
+
+<!-- New Slider Section -->
+
+<div class="slider">
+    <span id="slide-1"></span>
+    <span id="slide-2"></span>
+    <span id="slide-3"></span>
+    <!-- Current Image in Slideshow -->
+    <div class="image-container">
+      <img src="https://www.wikihow.com/images/thumb/b/b5/Provide-First-Aid-for-a-Broken-Bone-Step-2-Version-2.jpg/aid121080-v4-728px-Provide-First-Aid-for-a-Broken-Bone-Step-2-Version-2.jpg.webp" class="slide" width="728" height="546" />
+      <img src="https://www.wikihow.com/images/thumb/b/bd/Provide-First-Aid-for-a-Broken-Bone-Step-5-Version-2.jpg/aid121080-v4-728px-Provide-First-Aid-for-a-Broken-Bone-Step-5-Version-2.jpg.webp" class="slide" width="728" height="546" />
+      <img src="https://www.wikihow.com/images/thumb/6/62/Provide-First-Aid-for-a-Broken-Bone-Step-6-Version-2.jpg/aid121080-v4-728px-Provide-First-Aid-for-a-Broken-Bone-Step-6-Version-2.jpg.webp" class="slide" width="728" height="546" />
+    </div>
+    <div class="buttons">
+        <!-- Navigation for Slideshow-->
+      <a href="#slide-1"></a>
+      <a href="#slide-2"></a>
+      <a href="#slide-3"></a>
+    </div>
+  </div>
+
+
+
+<!-- End Slider Section -->
+
+
+
+
+<!-- Website Navigation -->
+<div style = "display: block; width: 25%; position: absolute; right: 0px;text-align: center;">
+    <a class = "pageLink" href = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/isaacwachsman/Smart-First-Aid/main/smartfirstaidindex.html"> Home </a>
+    <br><br><br><br><br><br><br><br>
+    <a class = "pageLink" href = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/isaacwachsman/Smart-First-Aid/main/burns.html"> Burn Procedures </a>
+    <br><br><br><br><br><br><br><br>
+    <a class = "pageLink" href = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/isaacwachsman/Smart-First-Aid/main/cuts.html"> Cut Procedures </a>
+    <br><br><br><br><br><br><br><br>
+    <a class = "pageLink" href = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/isaacwachsman/Smart-First-Aid/main/breaksandfractures.html"> Breaks and Fractures </a>
+    <br><br><br><br><br><br><br><br>
+    <a class = "pageLink" href = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/isaacwachsman/Smart-First-Aid/main/allergicreactions.html"> Allergic Reactions </a>
+    <br><br><br><br><br><br><br><br>
+    </div>
+    
+<!-- End Site Navigation-->
+
+
+
+<!-- Kit Contents Panel-->
+
+<div style = "display: block; width: 75%;">
+<div class= "contents">
+    <h1 id = "section">Cut Kit Contents</h1> 
+    <div class = "supplylist">
+        <ul>
+            <li> <p>6" Ice Pack </p>
+                <img class = "image" src = "https://m.media-amazon.com/images/I/81k-5+-18LS.jpg">
+            </li>
+            <li> <p>Burn and Fracture Kit Paper Instruction Manual </p>
+                <img class = "image" src = "https://sc04.alicdn.com/kf/H5a0c9c7d7ebf48ac8c58149047e9efb43.jpg">
+            </li>
+        
+        </ul>
+    </div>
+</div>
+
+<!-- Instruction Section -->
+<div class= "instructions">
+    <h1 id = "section">Breaks and Fractures Kit Instructions</h1>
+    <div class = "instructionaltext">
+    <form>
+    <p>
+      <input type = "checkbox" class = "checks"> </input>If the emergency is severe, call 911 for help.
+    </p>
+    <p>
+            <input type = "checkbox" class = "checks"></input>Apply ice to the injury.
+    </p>
+            </form>
+    </div>
+
+<!-- Video Instructions and Audio-->
+    <div class= "instructions">
+        <h1 id = "section">Video Instructions</h1>
+        <div class = "instructionaltext">
+            <video src = "https://nscmediacdn.azureedge.net/videos/nscu/FIRST_AID_CPR_AED_07_Burns.mp4" controls></video>
+            <audio src = "#"></audio>
+        </div>
+        </div>
+
+
+
+</div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+</body>
+
+
+</html>
